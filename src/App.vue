@@ -1,8 +1,9 @@
+
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
-<template> 
+<template>
   <div class="bg-black flex flex-col min-h-screen">
     
     <nav class="flex justify-center items-center px-4 py-4 mb-8">
@@ -21,6 +22,7 @@ import HelloWorld from './components/HelloWorld.vue'
       </button>
     </nav>
 
+  
     <div class="flex flex-col items-center justify-center flex-grow text-center bg-cover bg-center mb-16"
          style="background-image: url('/image/chips.png'); opacity: 0.85; height: 80vh;">
       <div class="z-10">
@@ -32,6 +34,7 @@ import HelloWorld from './components/HelloWorld.vue'
       </div>
     </div>
 
+    
     <div class="flex justify-center space-x-10 py-20">
       
       <div class="bg-gray-900 p-10 text-center">
@@ -41,7 +44,7 @@ import HelloWorld from './components/HelloWorld.vue'
         </p>
         <a href="#" class="text-gray-400 flex items-center justify-center hover:text-white">
           <span>ABOUT WEBDESIGN</span>
-          <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
           </svg>
         </a>
