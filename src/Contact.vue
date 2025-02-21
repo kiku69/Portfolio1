@@ -31,7 +31,7 @@
             required
           ></textarea>
         </div>
-        <button class="bg-orange-200 text-black px-6 py-3 rounded-md w-full">
+        <button class="bg-orange-200 text-black px-6 py-3 rounded-md w-full animate-bounce animate-infinite">
   SEND MESSAGE
 </button>
 

@@ -2,7 +2,7 @@
   <div class="about-page bg-black min-h-screen text-beige-400 flex flex-col items-center p-8">
     
     <div class="text-center mt-10">
-      <h1 class="text-7xl font-light">Kristofer Mere</h1>
+      <h1 class="text-7xl font-light animate-pulse animate-infinite">Kristofer Mere</h1>
       <p class="text-lg mt-4 text-gray-500 uppercase tracking-widest">Your Partner in Bringing Your Web Design Vision to Life</p>
     </div>
 

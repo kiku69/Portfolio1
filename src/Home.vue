@@ -3,27 +3,32 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-    <div class="bg-black flex flex-col min-h-screen">
-      <div class="flex flex-col items-center justify-center flex-grow text-center bg-cover bg-center mb-16"
-           style="background-image: url('/image/chips.png'); opacity: 0.85; height: 80vh;">
-        <div class="z-10">
-          <h2 class="text-orange-200 text-8xl font-bold">Web Designer</h2>
-          <h3 class="text-orange-200 text-8xl mt-4 italic">& Developer</h3>
-          <p class="text-orange-200 text-opacity-50 text-lg mt-6 max-w-xl">
-            Providing web design, development, and SEO services to help your business stand out.
-          </p>
-        </div>
+  <div class="bg-black flex flex-col min-h-screen">
+    <div class="flex flex-col items-center justify-center flex-grow text-center bg-cover bg-center mb-16"
+         style="background-image: url('/image/chips.png'); opacity: 0.85; height: 80vh;">
+      <div class="z-10">
+        <transition appear appear-active-class="animate-bounce">
+          <h2 class="text-orange-200 text-8xl font-bold animate-bounce">Web Designer</h2>
+        </transition>
+        <transition appear appear-active-class="animate-bounce">
+          <h3 class="text-orange-200 text-8xl mt-4 italic animate-bounce">& Developer</h3>
+        </transition>
+        <p class="text-orange-200 text-opacity-50 text-lg mt-6 max-w-xl">
+          Providing web design, development, and SEO services to help your business stand out.
+        </p>
       </div>
+    </div>
+
   
       <div class="flex justify-center space-x-10 py-20">
         
         <div class="bg-gray-900 p-10 text-center">
-          <h2 class="text-xl font-semibold mb-4 text-orange-200">WEB DESIGN</h2>
+          <h2 class="text-xl font-semibold mb-4 text-orange-200 ">WEB DESIGN</h2>
           <p class="text-gray-400 mb-6">
             Visually stunning web designs that captivate your audience by blending your brand voice and customer needs.
           </p>
           <a href="#" class="text-gray-400 flex items-center justify-center hover:text-white">
-            <span>ABOUT WEBDESIGN</span>
+            <span class="animate-pulse animate-infinite">ABOUT WEBDESIGN</span>
             <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
@@ -36,7 +41,7 @@ import HelloWorld from './components/HelloWorld.vue'
             Get custom web development solutions that are tailored to your specifications, designed to deliver a flawless user experience.
           </p>
           <a href="#" class="text-gray-400 flex items-center justify-center hover:text-white">
-            <span>ABOUT WEBFLOW</span>
+            <span class="animate-pulse animate-infinite" >ABOUT WEBFLOW</span>
             <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
@@ -49,7 +54,7 @@ import HelloWorld from './components/HelloWorld.vue'
             Proven SEO strategies that enhance your online performance, bringing you to the forefront of organic search results.
           </p>
           <a href="#" class="text-gray-400 flex items-center justify-center hover:text-white">
-            <span>ABOUT SEO</span>
+            <span class="animate-pulse animate-infinite" >ABOUT SEO</span>
             <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
             </svg>
@@ -146,7 +151,7 @@ import HelloWorld from './components/HelloWorld.vue'
   
       <header class="flex flex-col items-center justify-center flex-grow text-center p-8">
         <h1 class="text-7xl lg:text-8xl font-light text-beige-400 mb-4">
-          <span class="float-left">Kristofer Mere</span>
+          <span class="float-left animate-spin animate-infinite">Kristofer Mere</span>
         </h1>
   
         <div class="text-center mt-20">
