@@ -19,6 +19,18 @@ import HelloWorld from './components/HelloWorld.vue'
       </div>
     </div>
 
+    <!-- 3D Cube -->
+    <div class="scene">
+      <div class="cube">
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+      </div>
+    </div>
+
   
       <div class="flex justify-center space-x-10 py-20">
         
@@ -195,10 +207,45 @@ import HelloWorld from './components/HelloWorld.vue'
   
   <style scoped>
 
-  .text-beige-400 {
-    color: #d3b692; 
+  
+  
+  .scene {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;  
+    perspective: 600px;
+    margin-top: 30px;
+    margin-bottom: 140px;
   }
   
+  .cube {
+    width: 400px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-45deg);
+    animation: rotate 0.1s infinite linear;
+  }
   
+  .face {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(148, 148, 162, 0.6);
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+  }
+  
+  .front  { transform: translateZ(100px); }
+  .back   { transform: rotateY(180deg) translateZ(100px); }
+  .left   { transform: rotateY(-90deg) translateZ(100px); }
+  .right  { transform: rotateY(90deg) translateZ(100px); }
+  .top    { transform: rotateX(90deg) translateZ(100px); }
+  .bottom { transform: rotateX(-90deg) translateZ(100px); }
+  
+  @keyframes rotate {
+    0% { transform: rotateX(-30deg) rotateY(-45deg); }
+    100% { transform: rotateX(-30deg) rotateY(315deg); }
+  }
   </style>
   
